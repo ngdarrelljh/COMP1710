@@ -1,0 +1,73 @@
+<!Doctype html>
+
+<html lang="en">
+ 
+<head>
+    <meta charset="utf-8">
+    <title>The Grand Library - Feedback</title>
+    <link rel="stylesheet" type="text/css" href="style.css" title="default" id="style1" />
+    <link rel="alternate stylesheet" type="text/css" href="style1.css" title="alternate"/>
+    <script src="gallery.js"></script>
+</head>
+
+<body>
+    <hr/>
+        <div id="book">
+        <img src="https://image.flaticon.com/icons/svg/167/167755.svg" width="60" alt=""> <h1>&nbsp;The Grand Library</h1>
+        </div>
+    <hr/>
+
+        <div id="navigation">
+        <div id="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recommendations.html">Book Recommendations</a></li>
+            <li><a href="reviews.html">Book Reviews</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="sitemap.html">Site Map</a></li>
+            <li><a href="sourcelog.html">Source Log</a></li>
+            <li><a href="assignment.html">assignment.html</a></li>
+        </ul>
+        <button type="button" onclick="toggle()">Switch Style</button>
+        </div>
+        </div>
+    
+    <br><br><br>
+ <!--feedback section-->
+  <div id="replyform">
+      <div id="replyform_b">
+        <div id="form">
+ 
+      <img src="https://image.flaticon.com/icons/svg/1467/1467476.svg" width="70" alt="">
+      <h2><br>&nbsp;&nbsp;Please complete the form below to let me know what you think about my website.<br>&nbsp;
+        If you would like a response, please include your email address.</h2>
+</div>
+<br>
+      <form enctype="text/plain" 
+         action="mailto:u6883110@anu.edu.au">
+         What do you think of my website?<br>
+      <input type="text" name="site"
+         size="33" maxlength="50">
+
+         <br><br>What are your suggestions for improvement?<br>
+      <input type="text" name="some_text"
+         size="20" maxlength="200">
+
+         <br><br>Any book recommendations? (title & author e.g. Harry Potter and the Sorcerer's Stone by J.K. Rowling)<br>
+      <input type="text" name="some_text"
+         size="100" maxlength="200">
+        
+         <br><br>Your email?<br>
+      <input type="text" name="some_text"
+         size="50" maxlength="50">
+      
+         <br><br>Submit:
+      <input type="submit" value="Send it">
+      or
+      <input type="reset" value="Clear">
+    </form>
+    
+</div>
+</div>
+</body>
+</html>

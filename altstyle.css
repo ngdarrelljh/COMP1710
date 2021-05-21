@@ -1,0 +1,251 @@
+body {background-color:rgb(253, 253, 253); font-family: Arial, Helvetica, sans-serif}
+h1  {color: rgb(20, 19, 19); font-size: 50px; margin: 10px}
+h2 {color:rgb(20, 19, 19); font-size: 14px}
+h3 {color:rgb(20, 19, 19); font-size: 20px}
+h4 {color:rgb(20, 19, 19); font-size: 13px}
+h5 {color:rgb(20, 20, 20); font-size: 13px}
+h6 {color:rgb(226, 227, 229); font-size: 16px}
+h7 {color:rgb(235, 0, 129); font-size: 6px}
+h8 {color:rgb(172, 235, 0); font-size: 16px}
+h9 {color:rgb(226, 226, 226); font-size: 7px}
+h10 {color:rgb(235, 0, 129); font-size: 16px}
+
+  /* 4 groups of CSS rules to format the menu division. */
+#menu {  
+  width: 100%;
+  height: 35px;
+  font-size: 15px;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgb(54, 50, 50);
+  border-radius: 6px;
+}
+
+/* Menu division: format the unordered list so that it appears directly below the title of the page and below the edge of the colour background */
+#menu ul {
+    height: auto;
+    padding: 8px 0px;
+    /*margin: 0px;*/
+  }
+  
+  /* Menu division: format the list items so that they display across the page instead of in a vertical list */
+  #menu li {
+  display: inline;
+  padding: 20px;
+  }
+  
+  /* Menu division: format the anchor link items so that they are dark blue, spaced apart, and do not have underlines */
+  #menu a {
+      text-decoration: none;
+      /*color: #0000CC;*/
+      padding: 8px 8px 8px 8px; 
+  }
+  
+  #clear {
+    clear: left;
+  }
+  
+  /*table formatting */
+
+/*Format our caption for greater visibility */
+caption {font-size: 20pt;
+  font-weight: bold;
+  color: rgb(0, 0, 0)}
+
+/*Format our table to have single line borders,
+some white space (90% width and margins), and make the
+background a different color. */
+table {border-collapse: collapse;
+width: 30%;
+margin: 5px auto;
+border-width: 5pt;
+background-color: rgb(202, 243, 255);
+}
+
+/* Create internal space in the cells of the table. */
+th, td {padding: 2px 10px 2px 10px;
+ border-width: 2pt;
+ border-color: rgb(0, 0, 0);
+border-style: solid;
+}
+
+/* Our form formatting */
+form {background: rgb(255, 255, 255);
+  border: 5px solid rgb(60, 255, 86);
+  border-radius: 10px;
+  padding: 7px;
+}
+
+input[type="text"] {
+width: 70%;
+height: 20px;
+font-size: 12pt;
+}
+
+textarea {
+width: 100%;
+height: 3em;
+}
+
+/*These are our pseudo elements to style the menu item links depending on whether they have been visited or not and on hover. */
+
+/* unvisited link */
+#menu a:link {
+  color: black;
+}
+
+/* visited link */
+#menu a:visited {
+  color: rgb(255, 255, 255);
+}
+
+/* mouse over link */
+#menu a:hover {
+  color: rgb(255, 229, 82);
+}
+
+#sitemap a:link {
+  color: rgb(226, 226, 226);
+}
+
+#sitemap a:visited {
+  color: rgb(0, 0, 0);
+}
+
+#sitemap a:hover {
+  color: rgb(226, 226, 226);
+}
+
+#book img {
+  float: left;
+  margin-left: 20px;
+}
+#form img {
+  float: left;
+  margin-left: 20px;
+}
+
+#graceling img {
+  position: relative;
+  width: 10%;
+  margin: auto;
+}
+/*image gallery style*/
+
+* {box-sizing:border-box}
+.mySlides1, .mySlides2, .mySlides3 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 20%;
+  position: relative;
+  margin: auto;
+} 
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 15px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.459);
+}
+
+/* Caption text */
+.text {
+  color: #ffffff;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 14px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators 
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}*/
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* social media buttons*/
+
+.fa {
+  padding: 15px;
+  font-size: 10px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 3px;
+  border-radius: 60%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
